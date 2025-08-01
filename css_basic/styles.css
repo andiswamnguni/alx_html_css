@@ -1,0 +1,37 @@
+/* Flexbox setup for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Make main content flexible horizontally */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    overflow: hidden; /* Ensures child elements don't overflow */
+  }
+  
+  /* Give article more space (2/3 width) */
+  article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Give aside less space (1/3 width) */
+  aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Optional basic styling */
+  header, footer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+  }
+  
