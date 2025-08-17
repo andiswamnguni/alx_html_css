@@ -1,0 +1,68 @@
+/* ===== Animations for What we do… ===== */
+.what-we-do .item {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.what-we-do .item:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Entrance animation for What we do items */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.what-we-do .item {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.what-we-do .item:nth-child(1) { animation-delay: 0.1s; }
+.what-we-do .item:nth-child(2) { animation-delay: 0.3s; }
+.what-we-do .item:nth-child(3) { animation-delay: 0.5s; }
+
+/* ===== Animations for Our results ===== */
+.results-container .pentagon {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.results-container .pentagon:hover {
+  transform: scale(1.15) rotate(-2deg);
+  opacity: 0.9;
+}
+
+/* Bounce animation for entrance */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.results-container .pentagon {
+  opacity: 0;
+  animation: bounceIn 0.7s ease forwards;
+}
+
+.results-container .pentagon:nth-child(1) { animation-delay: 0.1s; }
+.results-container .pentagon:nth-child(2) { animation-delay: 0.3s; }
+.results-container .pentagon:nth-child(3) { animation-delay: 0.5s; }
+.results-container .pentagon:nth-child(4) { animation-delay: 0.7s; }

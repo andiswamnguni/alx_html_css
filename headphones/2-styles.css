@@ -1,0 +1,51 @@
+.our-results {
+  position: relative;
+  background: url('/mnt/data/headphones_hero_2.jpg') no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.our-results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(5, 15, 40, 0.7); /* dark overlay */
+  z-index: 0;
+}
+
+.our-results .section-title,
+.our-results .results-container {
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pentagon {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  background: #1e90ff;
+  clip-path: polygon(
+    50% 0%, 
+    95% 35%, 
+    77% 100%, 
+    23% 100%, 
+    5% 35%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  user-select: none;
+}

@@ -1,8 +1,8 @@
-# Headphones Web Page
+Headphones Web Page
 
 This is a fully responsive and accessible web page built using only HTML and CSS, based on a Figma design by Nicolas Philippot.
 
-## Features
+Features
 
 - Responsive design (mobile version at 480px or less)
 - Custom fonts (Source Sans Pro and Spin Cycle OT)
@@ -11,11 +11,11 @@ This is a fully responsive and accessible web page built using only HTML and CSS
 - Link hover/active color: #FF6565
 - Button hover/active effect: opacity 0.9
 
-## Notes
+Notes
 
 - The design was replicated as closely as possible to the Figma layout.
 - All styling was done manually using custom CSS.
 
-## Author
+Author
 
 Andiswa Mnguni
